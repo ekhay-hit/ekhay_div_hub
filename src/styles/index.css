@@ -1,5 +1,9 @@
+* {
+  font-family: monospace, "Courier New", Courier;
+  font-size: 20px;
+  /* font-family: "Roboto", "Open Sans", sans-serif; */
+}
+
 body {
   background-color: #cac6b4;
-
-  font-family: "Roboto", "Open Sans", sans-serif;
 }
