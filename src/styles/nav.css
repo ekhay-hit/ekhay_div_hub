@@ -1,0 +1,20 @@
+.nav {
+  display: flex;
+  justify-content: start;
+  gap: 80px;
+  color: black;
+  background-color: #e8e5d6;
+  height: 60px;
+  padding: 20px !important;
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    background-color: none;
+    border: none;
+  }
+}
+
+.developer {
+  margin-right: 100px;
+}
