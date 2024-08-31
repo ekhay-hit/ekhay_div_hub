@@ -1,7 +1,7 @@
 import "../styles/About.css";
 import mypic from "../assets/mypic.png";
 
-function About() {
+export default function About() {
   return (
     <div className="about">
       <h6> About me</h6>
@@ -27,5 +27,3 @@ function About() {
     </div>
   );
 }
-
-export default About;
