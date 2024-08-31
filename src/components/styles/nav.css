@@ -14,6 +14,11 @@
     border: none;
   }
 }
+.activeTab {
+  background-color: #cac6b4 !important;
+  border-radius: 25px;
+  color: cadetblue !important ;
+}
 
 .developer {
   margin-right: 100px;
