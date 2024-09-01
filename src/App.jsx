@@ -5,7 +5,7 @@ import Footer from "./components/Footer.jsx";
 import { Outlet } from "react-router-dom";
 function App() {
   return (
-    <Fragment>
+    <Fragment className="root">
       <Nav />
       <main className="main">
         <Outlet />

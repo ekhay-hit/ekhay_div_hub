@@ -39,3 +39,17 @@
   background-color: transparent;
   border: none;
 }
+
+/* Style for the main of the portfolio */
+
+.projects-list {
+  width: 80% !important;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 100px;
+  box-shadow: 2px 2px 2px 2px gray;
+  border-radius: 20px;
+}

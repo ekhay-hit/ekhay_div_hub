@@ -5,6 +5,7 @@ import packOver1 from "../assets/taskBoard1.png";
 
 const projects = [
   {
+    id: 1,
     name: "PAC-Overflow",
     technology: "MERN",
     image: "./assets/packOverFlow1.png",
@@ -12,6 +13,7 @@ const projects = [
     dUrl: "https://pac-overflow.onrender.com/",
   },
   {
+    id: 2,
     name: "Text Editor",
     technology: "MERN",
     image: "./assets/textEditor1.png",
@@ -19,6 +21,7 @@ const projects = [
     dUrl: "https://text-editor-pwa-rrm4.onrender.com",
   },
   {
+    id: 3,
     name: "Safer Travels",
     technology: "JS,CSS, API,",
     image: "./assets/weatherDashboard1.png",
@@ -26,6 +29,7 @@ const projects = [
     dUrl: "https://mtkrd.github.io/Safer-Travels/",
   },
   {
+    id: 4,
     name: "Task Board",
     technology: "JS,jQuery,CSS",
     image: "./assets/taskBoard1.png",
@@ -37,7 +41,13 @@ const projects = [
 export default function Portfolio() {
   const myProjects = projects;
   console.log(myProjects);
-  return <Project projects={myProjects} />;
+  return (
+    <main className="projects-list">
+      {myProjects.map((project) => (
+        <Project projects={myProjects} key={project.id} />
+      ))}
+    </main>
+  );
 }
 
 // function ProjectList() {
