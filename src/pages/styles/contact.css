@@ -1,0 +1,21 @@
+.contact {
+  display: flex;
+  width: 80%;
+  /* justify-content: start; */
+  text-align: start;
+  gap: 20px;
+  flex-wrap: wrap;
+  box-shadow: 2px 2px 2px 2px gray;
+  border-radius: 20px;
+  padding: 20px;
+}
+
+.input {
+  box-shadow: 2px 2px gray;
+  border: none;
+  background-color: rgb(250, 244, 237);
+}
+.btn {
+  background-color: rgb(131, 180, 180);
+  width: 100px;
+}
