@@ -1,13 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+#root {
+  max-width: 1700px;
+  height: 100%;
+  /* background-color: #e8e5d6; */
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  margin-top: 50px;
+  border-radius: 25px 25px 0px 0px;
+  box-sizing: 2px 2px 2px 2px;
+}
 
 * {
-  font-family: monospace, "Courier New", Courier;
+  /* font-family: monospace, "Courier New", Courier; */
+  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+
   font-size: 20px;
-  /* font-family: "Roboto", "Open Sans", sans-serif; */
 }
 
 body {
-  background-color: #cac6b4;
+  /* background-color: #cac6b4; */
 }

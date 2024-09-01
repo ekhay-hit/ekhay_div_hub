@@ -1,11 +1,9 @@
 .about {
   display: flex;
-  /* justify-content: start; */
   flex-wrap: wrap;
   height: 100%;
   margin: auto;
-  width: 90%;
-  margin-top: 50px;
+  width: 80%;
   gap: 20px;
   padding: 100px;
   box-shadow: 2px 2px 2px 2px gray;
@@ -14,13 +12,11 @@
   h6 {
     width: 100%;
     text-align: left;
-    /* padding: 20px; */
   }
 
   .image-card {
     flex-basis: 100%;
     background-color: transparent;
-    box-shadow: 3px 4px rgb(153, 142, 142);
     border-radius: 25px;
   }
   img {

@@ -1,22 +1,28 @@
 .nav {
   display: flex;
   justify-content: start;
+  max-width: 80%;
+  margin: auto;
   gap: 80px;
   color: black;
-  background-color: #e8e5d6;
-  height: 60px;
-  padding: 20px !important;
+  /* background-color: #e8e5d6; */
 
   a {
     text-decoration: none;
     color: inherit;
     background-color: none;
     border: none;
+    border-radius: 25px;
   }
+}
+
+a:hover {
+  text-decoration: none;
+  color: black !important;
+  background-color: #e6e3d5 !important;
 }
 .activeTab {
   background-color: #cac6b4 !important;
-  border-radius: 25px;
   color: cadetblue !important ;
 }
 

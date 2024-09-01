@@ -1,4 +1,14 @@
-footer {
+.footer {
   display: flex;
+  gap: 40px;
+  min-height: 100px;
+  margin-top: 80px;
   justify-content: center;
+
+  .item {
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+    margin-bottom: auto;
+  }
 }
