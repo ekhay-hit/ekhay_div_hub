@@ -1,6 +1,7 @@
 .resume {
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   width: 80%;
   background-color: azure;
   padding: 100px;
@@ -33,4 +34,15 @@ ul h2 {
 li {
   padding: 15px;
   text-align: left;
+}
+
+.download_resume {
+  text-align: start;
+  width: 100%;
+  padding: 30px;
+}
+.download_resume a:hover {
+  background-color: rgb(203, 223, 223) !important;
+  padding: 10px;
+  border-radius: 25px;
 }

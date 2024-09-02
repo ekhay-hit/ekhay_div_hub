@@ -33,6 +33,9 @@ export default function Resume() {
   const backEndSkills = backEnd;
   return (
     <main className="resume">
+      <div className="download_resume">
+        <ResumeDownload />
+      </div>
       <div className="front_end">
         <Skill skills={frontEndSkills} />
       </div>
@@ -54,5 +57,15 @@ function Skill({ skills }) {
         ))}
       </ul>
     </>
+  );
+}
+
+function ResumeDownload() {
+  const resumeUrl =
+    "https://drive.google.com/uc?export=download&id=1ic-YgQmq-djK3T4gge5TYAsvsEpd8xz0";
+  return (
+    <a href={resumeUrl} target="_blank" download="Houssine_khay.pdf">
+      ⬇️ Download my resume
+    </a>
   );
 }
