@@ -16,8 +16,8 @@ const projects = [
     id: 2,
     name: "Text Editor",
     technology: "MERN2",
-    image: "textEditor1.png",
-    gitHub: "https://github.com/asw-afk/PAC-Overflow",
+    image: "textEditor11.png",
+    gitHub: "https://github.com/ekhay-hit/text_editor_pwa",
     dUrl: "https://text-editor-pwa-rrm4.onrender.com",
   },
   {
@@ -58,6 +58,7 @@ function ProjectList({ projects }) {
 }
 
 function Project({ item }) {
+  const gitHubRepo = item.gitHub;
   //state to control hiding information display on each project
   const [hide, setHide] = useState(false);
   //state to contol the image if loaded or not
@@ -101,7 +102,7 @@ function Project({ item }) {
       <div
         style={{
           backgroundImage: imageLoaded ? `url(${bgImageRef.current})` : "none",
-          // backgroundSize: "cover",
+          backgroundSize: "cover",
         }}
         onMouseOver={handleMouse}
         onMouseOut={handleMouse}
@@ -109,9 +110,13 @@ function Project({ item }) {
       >
         {hide && (
           <>
-            <a>{item.name}</a>
+            <m>
+              <a href={item.dUrl} target="_blank">
+                {item.name}
+              </a>
+            </m>
             <div className="gitHub">
-              <GitHub />
+              <GitHub gitHub={gitHubRepo} />
             </div>
             <p>{item.technology}</p>
           </>
@@ -121,10 +126,10 @@ function Project({ item }) {
   );
 }
 
-function GitHub() {
+function GitHub({ gitHub }) {
   return (
     <div className="gitHub">
-      <a href="https://github.com/ekhay-hit" target="_blank">
+      <a href={gitHub} target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="30"
