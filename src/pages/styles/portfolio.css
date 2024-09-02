@@ -7,7 +7,7 @@
   gap: 20px;
   width: 400px;
   height: 250px;
-  background-color: rgb(194, 194, 73);
+  /* background-color: rgb(194, 194, 73); */
   border-radius: 5px;
   box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.5);
 }

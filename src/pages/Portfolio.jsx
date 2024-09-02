@@ -1,22 +1,22 @@
 /* eslint-disable react/prop-types */
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import "./styles/portfolio.css";
-import packOver1 from "../assets/taskBoard1.png";
+// import packOver1 from "../assets/taskBoard1.png";
 
 const projects = [
   {
     id: 1,
     name: "PAC-Overflow",
-    technology: "MERN",
-    image: "./assets/packOverFlow1.png",
+    technology: "MERN1",
+    image: "PacOver.png",
     gitHub: "https://github.com/asw-afk/PAC-Overflow",
     dUrl: "https://pac-overflow.onrender.com/",
   },
   {
     id: 2,
     name: "Text Editor",
-    technology: "MERN",
-    image: "./assets/textEditor1.png",
+    technology: "MERN2",
+    image: "textEditor1.png",
     gitHub: "https://github.com/asw-afk/PAC-Overflow",
     dUrl: "https://text-editor-pwa-rrm4.onrender.com",
   },
@@ -24,7 +24,7 @@ const projects = [
     id: 3,
     name: "Safer Travels",
     technology: "JS,CSS, API,",
-    image: "./assets/weatherDashboard1.png",
+    image: "weatherDashboard.png",
     gitHub: "https://github.com/MTKRD/Safer-Travels",
     dUrl: "https://mtkrd.github.io/Safer-Travels/",
   },
@@ -32,7 +32,7 @@ const projects = [
     id: 4,
     name: "Task Board",
     technology: "JS,jQuery,CSS",
-    image: "./assets/taskBoard1.png",
+    image: "taskBoard1.png",
     gitHub: "https://github.com/ekhay-hit/Tasks-Board",
     dUrl: "https://ekhay-hit.github.io/Tasks-Board/",
   },
@@ -41,43 +41,78 @@ const projects = [
 export default function Portfolio() {
   const myProjects = projects;
   console.log(myProjects);
+  return <ProjectList projects={myProjects} />;
+}
+
+function ProjectList({ projects }) {
+  console.log("I am in the porjectList");
+  console.log(projects);
+  const myProject = projects;
   return (
     <main className="projects-list">
-      {myProjects.map((project) => (
-        <Project projects={myProjects} key={project.id} />
+      {myProject.map((project) => (
+        <Project item={project} key={project.id} />
       ))}
     </main>
   );
 }
 
-// function ProjectList() {
-// return <h1>Render the project here</h1>;
-// }
-
-function Project() {
+function Project({ item }) {
+  //state to control hiding information display on each project
   const [hide, setHide] = useState(false);
+  //state to contol the image if loaded or not
+  const [imageLoaded, setImageLoaded] = useState(false);
+
+  // useRef to keep the image path whe it is loaded
+  const bgImageRef = useRef(null);
+
+  // function to change the setHide state when mouse hover or out of the project
   function handleMouse() {
+    // set the state to the opposite of its value
     setHide((value) => !value);
   }
-  const bgStyle = {
-    backgroundImage: `url(${packOver1})`,
-    backgroundSize: "cover",
-  };
+
+  // useEffect to import the path of the background
+  useEffect(() => {
+    // function to load image
+    const loadImage = async () => {
+      try {
+        // import the image from the folder
+        const imageModule = import(`../assets/${item.image}`);
+
+        // assign it to bgImageRef.current
+        bgImageRef.current = imageModule.default;
+
+        // await till the image is loaded
+        bgImageRef.current = (await imageModule).default;
+
+        // change the state to true when the image loaded
+        setImageLoaded(true);
+        //catch if there is any error
+      } catch {
+        console.error("Failed to load the image");
+      }
+    };
+    loadImage();
+  }, [item.image]);
+
   return (
     <>
       <div
-        style={bgStyle}
+        style={{
+          backgroundImage: imageLoaded ? `url(${bgImageRef.current})` : "none",
+        }}
         onMouseOver={handleMouse}
         onMouseOut={handleMouse}
         className="project-card"
       >
         {hide && (
           <>
-            <a>Stack Over Flow</a>
+            <a>{item.name}</a>
             <div className="gitHub">
               <GitHub />
             </div>
-            <p>MERN Stack</p>
+            <p>{item.technology}</p>
           </>
         )}
       </div>
