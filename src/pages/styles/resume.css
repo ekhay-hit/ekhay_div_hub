@@ -1,0 +1,23 @@
+.resume {
+  display: flex;
+  justify-content: start;
+  width: 80%;
+}
+
+ul {
+  padding: 15px;
+  list-style-type: disc;
+}
+
+ul h2 {
+  color: #978599;
+  padding: 30px;
+  font-weight: bolder;
+  font-family: "Sofia", sans-serif;
+  font-size: 32px;
+}
+
+li {
+  padding: 15px;
+  text-align: left;
+}
