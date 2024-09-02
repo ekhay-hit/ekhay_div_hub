@@ -6,28 +6,35 @@
   width: 80%;
   gap: 20px;
   padding: 100px;
-  box-shadow: 2px 2px 2px 2px gray;
+  box-shadow: 2px 2px 2px 2px rgb(189, 187, 187);
   border-radius: 20px;
 
   h6 {
     width: 100%;
-    text-align: left;
+    text-align: center;
+    font-weight: bolder;
+    color: #978599;
+    font-style: oblique;
+    font-size: 40px;
+    font-family: "Sofia", sans-serif;
+    /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   }
 
   .image-card {
     flex-basis: 100%;
+    padding: 50px 0px;
     background-color: transparent;
     border-radius: 25px;
   }
   img {
     display: block;
-    width: 100px;
+    width: 150px;
     border-radius: 55%;
   }
 }
 
 .about-content {
-  margin-top: 10px;
+  padding-top: 40px;
   padding: 20px;
   text-align: left;
   line-height: 45px;

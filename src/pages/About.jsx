@@ -9,7 +9,7 @@ export default function About() {
         <img src={mypic} alt="author picture" />
       </div>
       <p className="about-content">
-        I am , an enthusiastic and driven Full Stack Developer with a rich
+        I am an enthusiastic and driven jr. Full Stack Developer with a rich
         background in technical support and leadership. I graduated from the
         University of Central Florida with a bachelor's degree in Science of
         Information Technology. Through my recent completion of the Full Stack

@@ -7,8 +7,8 @@ function Footer() {
       <a className="item" href="https://github.com/ekhay-hit" target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
+          width="25"
+          height="25"
           fill="currentColor"
           className="bi bi-github"
           viewBox="0 0 16 16"
@@ -23,8 +23,8 @@ function Footer() {
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
+          width="25"
+          height="25"
           fill="currentColor"
           className="bi bi-linkedin"
           viewBox="0 0 16 16"
@@ -39,8 +39,8 @@ function Footer() {
       >
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="16"
-          height="16"
+          width="25"
+          height="25"
           fill="currentColor"
           className="bi bi-stack-overflow"
           viewBox="0 0 16 16"
