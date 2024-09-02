@@ -1,7 +1,19 @@
 .resume {
   display: flex;
-  justify-content: start;
+  justify-content: space-around;
   width: 80%;
+  background-color: azure;
+  padding: 100px;
+  box-shadow: 2px 2px 2px 2px rgb(189, 187, 187);
+  border-radius: 20px;
+}
+
+.front_end {
+  width: 35%;
+}
+
+.back_end {
+  width: 35%;
 }
 
 ul {
@@ -11,6 +23,7 @@ ul {
 
 ul h2 {
   color: #978599;
+  text-align: start;
   padding: 30px;
   font-weight: bolder;
   font-family: "Sofia", sans-serif;

@@ -1,3 +1,18 @@
+/* Style for the main of the portfolio */
+
+.projects-list {
+  width: 80% !important;
+  margin: auto;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  padding: 100px;
+  box-shadow: 2px 2px 2px 2px rgb(189, 187, 187);
+  border-radius: 20px;
+  background-color: azure;
+}
+
 .project-card {
   display: flex;
   flex-direction: column;
@@ -39,21 +54,3 @@
   background-color: transparent;
   border: none;
 }
-
-/* Style for the main of the portfolio */
-
-.projects-list {
-  width: 80% !important;
-  margin: auto;
-  justify-content: center;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
-  padding: 100px;
-  box-shadow: 2px 2px 2px 2px gray;
-  border-radius: 20px;
-}
-/* .projects-list a:hover { */
-/* color: white; */
-/* } */
-/*  */

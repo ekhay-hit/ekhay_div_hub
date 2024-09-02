@@ -33,14 +33,18 @@ export default function Resume() {
   const backEndSkills = backEnd;
   return (
     <main className="resume">
-      <Skill frontEnd={frontEndSkills} />
-      <Skill frontEnd={backEndSkills} />
+      <div className="front_end">
+        <Skill skills={frontEndSkills} />
+      </div>
+      <div className="back_end">
+        <Skill skills={backEndSkills} />
+      </div>
     </main>
   );
 }
 
-function Skill({ frontEnd }) {
-  const myFrontEnd = frontEnd;
+function Skill({ skills }) {
+  const myFrontEnd = skills;
   return (
     <>
       <ul>
