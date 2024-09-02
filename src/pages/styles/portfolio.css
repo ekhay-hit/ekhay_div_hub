@@ -7,18 +7,21 @@
   gap: 20px;
   width: 400px;
   height: 250px;
-  /* background-color: rgb(194, 194, 73); */
   border-radius: 5px;
   box-shadow: 6px 6px 20px 0px rgba(0, 0, 0, 0.5);
 }
 
 .project-card a {
   text-decoration: none;
-  /* background-color: gray; */
   border: none;
   background-color: transparent !important;
   filter: blur(1px);
   transition: filter 0.1s ease;
+}
+.project-card:hover {
+  filter: brightness(105%);
+  border: 2px solid black;
+  border-color: rgba(255, 255, 255, 1);
 }
 .project-card a:hover {
   filter: none;
@@ -30,9 +33,6 @@
   display: inline-block;
   filter: blur(1px);
   transition: filter 0.1s ease;
-  /* text-decoration: none; */
-  /* background-color: transparent; */
-  /* border: none; */
 }
 .gitHub a:hover {
   filter: none;

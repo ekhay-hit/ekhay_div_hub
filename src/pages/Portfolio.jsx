@@ -101,6 +101,7 @@ function Project({ item }) {
       <div
         style={{
           backgroundImage: imageLoaded ? `url(${bgImageRef.current})` : "none",
+          // backgroundSize: "cover",
         }}
         onMouseOver={handleMouse}
         onMouseOut={handleMouse}
