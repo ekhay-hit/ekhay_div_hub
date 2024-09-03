@@ -7,6 +7,7 @@
 
   .item {
     display: flex;
+    color: black;
     justify-content: center;
     margin-top: auto;
     margin-bottom: auto;

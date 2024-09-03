@@ -1,4 +1,4 @@
-import "../styles/About.css";
+import "./styles/About.css";
 import mypic from "../assets/mypic.png";
 
 export default function About() {
