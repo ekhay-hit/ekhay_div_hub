@@ -1,6 +1,6 @@
 import "./styles/App.css";
 import { Fragment } from "react";
-import Nav from "./components/nav.jsx";
+import Nav from "./components/Nav.jsx";
 import Footer from "./components/Footer.jsx";
 import { Outlet } from "react-router-dom";
 function App() {
