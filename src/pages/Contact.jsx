@@ -13,7 +13,7 @@ export default function Contact() {
     console.log(name);
     console.log(content);
     if (!name || !email || !content) {
-      setMessage("all field are required");
+      setMessage("* All fields are required");
       return;
     } else {
       setSuccess(true);
@@ -54,12 +54,13 @@ export default function Contact() {
           value={content}
           onChange={(e) => setContent(e.target.value)}
         ></textarea>
-
-        {!success ? (
-          <h3 className="text-danger message">{message}</h3>
-        ) : (
-          <h3 className="text-success message">{message}</h3>
-        )}
+        <div className="message">
+          {!success ? (
+            <span className="text-danger">{message}</span>
+          ) : (
+            <span className="text-success">{message}</span>
+          )}
+        </div>
         <button className="btn">Send</button>
       </form>
     </>

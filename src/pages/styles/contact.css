@@ -31,10 +31,12 @@
 .btn {
   background-color: rgb(131, 180, 180);
   width: 100px;
-  margin: 30px 20px;
+  margin: 20px 20px;
 }
 
-message {
+.message {
   padding: 3px;
+  width: 100%;
   text-align: left;
+  height: 5px;
 }
