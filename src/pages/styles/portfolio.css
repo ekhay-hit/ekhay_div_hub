@@ -3,7 +3,7 @@
 .projects-list {
   width: 80% !important;
   margin: auto;
-  justify-content: center;
+  justify-content: space-around;
   display: flex;
   flex-wrap: wrap;
   gap: 100px;
