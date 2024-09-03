@@ -8,7 +8,7 @@ const projects = [
     id: 1,
     name: "PAC-Overflow",
     technology: "MERN1",
-    image: "PacOver.png",
+    image: "PacOver",
     gitHub: "https://github.com/asw-afk/PAC-Overflow",
     dUrl: "https://pac-overflow.onrender.com/",
   },
@@ -16,7 +16,7 @@ const projects = [
     id: 2,
     name: "Text Editor",
     technology: "MERN2",
-    image: "textEditor11.png",
+    image: "textEditor11",
     gitHub: "https://github.com/ekhay-hit/text_editor_pwa",
     dUrl: "https://text-editor-pwa-rrm4.onrender.com",
   },
@@ -24,7 +24,7 @@ const projects = [
     id: 3,
     name: "Safer Travels",
     technology: "JS,CSS, API,",
-    image: "weatherDashboard.png",
+    image: "weatherDashboard",
     gitHub: "https://github.com/MTKRD/Safer-Travels",
     dUrl: "https://mtkrd.github.io/Safer-Travels/",
   },
@@ -32,7 +32,7 @@ const projects = [
     id: 4,
     name: "Task Board",
     technology: "JS,jQuery,CSS",
-    image: "taskBoard1.png",
+    image: "taskBoard1",
     gitHub: "https://github.com/ekhay-hit/Tasks-Board",
     dUrl: "https://ekhay-hit.github.io/Tasks-Board/",
   },
@@ -79,7 +79,7 @@ function Project({ item }) {
     const loadImage = async () => {
       try {
         // import the image from the folder
-        const imageModule = import(`../assets/${item.image}`);
+        const imageModule = import(`../assets/${item.image}.png`);
 
         // assign it to bgImageRef.current
         bgImageRef.current = imageModule.default;
