@@ -2,11 +2,15 @@ import "./styles/contact.css";
 import { useState } from "react";
 
 export default function Contact() {
+  // State to controll input
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [content, setContent] = useState("");
+  // state to update the message base if it success or not
   const [message, setMessage] = useState("");
+  //state for a sccuess email
   const [success, setSuccess] = useState(false);
+  // function that handle the sumbit and pull value for the input
   function handelSubmit(e) {
     e.preventDefault();
     console.log(email);
@@ -23,6 +27,7 @@ export default function Contact() {
       setContent("");
     }
   }
+  // contact returning component
   return (
     <>
       <form className="contact " onSubmit={handelSubmit}>
