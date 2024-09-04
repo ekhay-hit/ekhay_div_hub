@@ -5,7 +5,7 @@
   margin: auto;
   width: 80%;
   gap: 20px;
-  padding: 100px;
+  padding: 60px;
   box-shadow: 2px 2px 2px 2px rgb(189, 187, 187);
   border-radius: 20px;
   background-color: azure;
@@ -18,12 +18,11 @@
     font-style: oblique;
     font-size: 40px;
     font-family: "Sofia", sans-serif;
-    /* font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; */
   }
 
   .image-card {
     flex-basis: 100%;
-    padding: 50px 0px;
+    padding: 40px 0px;
     background-color: transparent;
     border-radius: 25px;
   }
@@ -35,7 +34,7 @@
 }
 
 .about-content {
-  padding-top: 40px;
+  padding-top: 30px;
   padding: 20px;
   text-align: left;
   line-height: 55px;

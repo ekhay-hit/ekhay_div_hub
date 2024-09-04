@@ -13,6 +13,14 @@ const projects = [
     dUrl: "https://pac-overflow.onrender.com/",
   },
   {
+    id: 5,
+    name: "Smart Shop",
+    technology: "Blazor,.Net, C#",
+    image: "smartShop",
+    gitHub: "https://github.com/ekhay-hit/SmartShop",
+    dUrl: "https://github.com/ekhay-hit/SmartShop",
+  },
+  {
     id: 2,
     name: "Text Editor",
     technology: "MERN2",

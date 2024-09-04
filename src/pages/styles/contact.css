@@ -1,14 +1,12 @@
 .contact {
   display: flex;
   width: 80%;
-  /* justify-content: start; */
   text-align: start;
   gap: 30px;
   flex-wrap: wrap;
   box-shadow: 2px 2px 2px 2px rgb(189, 187, 187);
   border-radius: 20px;
   padding: 0px 80px;
-
   background-color: azure;
 }
 
@@ -20,7 +18,7 @@
   font-style: oblique;
   font-size: 40px;
   font-family: "Sofia", sans-serif;
-  padding: 50px;
+  padding: 40px;
 }
 
 .input {
