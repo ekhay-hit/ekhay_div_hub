@@ -118,7 +118,7 @@ function Project({ item }) {
             <div className="gitHub">
               <GitHub gitHub={gitHubRepo} />
             </div>
-            <p>{item.technology}</p>
+            <h4>{item.technology}</h4>,
           </>
         )}
       </div>
@@ -132,8 +132,8 @@ function GitHub({ gitHub }) {
       <a href={gitHub} target="_blank">
         <svg
           xmlns="http://www.w3.org/2000/svg"
-          width="30"
-          height="30"
+          width="35"
+          height="35"
           fill="currentColor"
           className="bi bi-github"
           viewBox="0 0 16 16"

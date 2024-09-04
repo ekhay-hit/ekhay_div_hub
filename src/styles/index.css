@@ -11,8 +11,10 @@
 }
 
 * {
-  /* font-family: monospace, "Courier New", Courier; */
   font-family: "Roboto", "Helvetica", "Arial", sans-serif;
-
+  /* font-family: "Open Sans", sans-serif; */
   font-size: 20px;
-} /*  */ /* body {  */ /* background-color: #cac6b4; */ /* } */ /*  */
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
