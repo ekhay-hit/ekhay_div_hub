@@ -36,6 +36,22 @@ const projects = [
     gitHub: "https://github.com/ekhay-hit/Tasks-Board",
     dUrl: "https://ekhay-hit.github.io/Tasks-Board/",
   },
+  {
+    id: 5,
+    name: "Task Board",
+    technology: "JS,jQuery,CSS",
+    image: "taskBoard",
+    gitHub: "https://github.com/ekhay-hit/Tasks-Board",
+    dUrl: "https://ekhay-hit.github.io/Tasks-Board/",
+  },
+  {
+    id: 3,
+    name: "Safer Travels",
+    technology: "JS,CSS, API,",
+    image: "weatherDashboard",
+    gitHub: "https://github.com/MTKRD/Safer-Travels",
+    dUrl: "https://mtkrd.github.io/Safer-Travels/",
+  },
 ];
 
 export default function Portfolio() {
