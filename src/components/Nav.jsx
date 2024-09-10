@@ -5,6 +5,15 @@ function Nav() {
   const currentPage = useLocation().pathname;
   return (
     <header className="col-12 nav">
+      <h3>
+        <Link
+          to="https://github.com/ekhay-hit"
+          className="developer"
+          target="_blank"
+        >
+          Khay
+        </Link>
+      </h3>
       <Link
         to="/"
         className={currentPage === "/" ? "nav-link activeTab" : "nav-link"}

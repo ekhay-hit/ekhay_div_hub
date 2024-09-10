@@ -31,4 +31,8 @@ a:hover {
 
 .developer {
   margin-right: 100px;
+  font-family: "Sofia", sans-serif;
+  font-size: 28px;
+  color: #978599 !important;
+  font-weight: bold;
 }

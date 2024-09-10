@@ -13,7 +13,7 @@ const projects = [
     dUrl: "https://pac-overflow.onrender.com/",
   },
   {
-    id: 5,
+    id: 2,
     name: "Smart Shop",
     technology: "Blazor,.Net, C#",
     image: "smartShop",
@@ -21,7 +21,7 @@ const projects = [
     dUrl: "https://github.com/ekhay-hit/SmartShop",
   },
   {
-    id: 2,
+    id: 3,
     name: "Text Editor",
     technology: "MERN2",
     image: "textEditor",
@@ -29,7 +29,7 @@ const projects = [
     dUrl: "https://text-editor-pwa-rrm4.onrender.com",
   },
   {
-    id: 3,
+    id: 4,
     name: "Safer Travels",
     technology: "JS,CSS, API,",
     image: "weatherDashboard",
@@ -37,12 +37,20 @@ const projects = [
     dUrl: "https://mtkrd.github.io/Safer-Travels/",
   },
   {
-    id: 4,
+    id: 5,
     name: "Task Board",
     technology: "JS,jQuery,CSS",
     image: "taskBoard1",
     gitHub: "https://github.com/ekhay-hit/Tasks-Board",
     dUrl: "https://ekhay-hit.github.io/Tasks-Board/",
+  },
+  {
+    id: 6,
+    name: "Projects taracker Board",
+    technology: "JS,jQuery,CSS",
+    image: "project_tracker_board",
+    gitHub: "https://github.com/ekhay-hit/Project-Board-Tracker",
+    dUrl: "https://ekhay-hit.github.io/Project-Board-Tracker/",
   },
 ];
 
