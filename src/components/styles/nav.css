@@ -1,13 +1,10 @@
 .nav {
   display: flex;
   justify-content: start;
-  max-width: 80%;
+  width: 80% !important;
   margin: auto;
   gap: 80px;
   color: black;
-  /* box-shadow: 0px 2px 2px 0px azure; */
-  /* border-radius: 5px; */
-  padding-bottom: 10px;
   padding-left: 30px !important;
 
   a {
@@ -35,4 +32,16 @@ a:hover {
   font-size: 28px;
   color: #978599 !important;
   font-weight: bold;
+}
+
+@media screen and (max-width: 1400px) {
+  .nav {
+    width: 100%;
+    gap: 2px;
+    padding: 0px !important;
+  }
+
+  .developer {
+    margin: 0px;
+  }
 }

@@ -1,6 +1,6 @@
 .contact {
   display: flex;
-  width: 80%;
+  width: 80% !important;
   text-align: start;
   gap: 30px;
   flex-wrap: wrap;
@@ -37,4 +37,11 @@
   width: 100%;
   text-align: left;
   height: 5px;
+}
+
+.contact {
+  width: 100%;
+  gap: 5px;
+  margin: 0px;
+  padding: 0px 10px;
 }

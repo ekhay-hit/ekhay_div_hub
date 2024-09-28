@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 80%;
+  width: 80% !important;
   background-color: azure;
   padding: 60px;
   box-shadow: 2px 2px 2px 2px rgb(189, 187, 187);
@@ -45,4 +45,11 @@ li {
   background-color: rgb(203, 223, 223) !important;
   padding: 10px;
   border-radius: 25px;
+}
+
+.resume {
+  width: 100%;
+  gap: 5px;
+  margin: 0px;
+  padding: 4px;
 }

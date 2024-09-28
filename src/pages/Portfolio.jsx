@@ -129,8 +129,8 @@ function Project({ item }) {
           backgroundSize: "cover",
           backgroundRepeat: "no-repeat",
           backgroundPosition: "center",
-          height: "250px",
-          width: "400px",
+          // height: "250px",
+          // width: "400px",
         }}
         onMouseOver={handleMouse}
         onMouseOut={handleMouse}

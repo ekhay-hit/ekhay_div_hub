@@ -22,7 +22,7 @@
 
   .image-card {
     flex-basis: 100%;
-    padding: 40px 0px;
+    padding: 20px 0px;
     background-color: transparent;
     border-radius: 25px;
   }
@@ -38,4 +38,13 @@
   padding: 20px;
   text-align: left;
   line-height: 55px;
+}
+
+@media screen and (max-width: 1400px) {
+  .about {
+    width: 100%;
+    gap: 5px;
+    margin: 0px;
+    padding: 4px;
+  }
 }
