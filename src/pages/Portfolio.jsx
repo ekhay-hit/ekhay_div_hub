@@ -5,9 +5,17 @@ import "./styles/portfolio.css";
 
 const projects = [
   {
+    id: 7,
+    name: "FootyNet",
+    technology: "MERN,GraphQL",
+    image: "footyNet",
+    gitHub: "https://github.com/ekhay-hit/footy_net",
+    dUrl: "https://footy-net.onrender.com/",
+  },
+  {
     id: 1,
     name: "PAC-Overflow",
-    technology: "MERN1",
+    technology: "MERN",
     image: "PacOver",
     gitHub: "https://github.com/asw-afk/PAC-Overflow",
     dUrl: "https://pac-overflow.onrender.com/",
