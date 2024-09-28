@@ -127,6 +127,10 @@ function Project({ item }) {
         style={{
           backgroundImage: imageLoaded ? `url(${bgImageRef.current})` : "none",
           backgroundSize: "cover",
+          backgroundRepeat: "no-repeat",
+          backgroundPosition: "center",
+          height: "250px",
+          width: "400px",
         }}
         onMouseOver={handleMouse}
         onMouseOut={handleMouse}
