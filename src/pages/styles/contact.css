@@ -39,9 +39,11 @@
   height: 5px;
 }
 
-.contact {
-  width: 100%;
-  gap: 5px;
-  margin: 0px;
-  padding: 0px 10px;
+@media screen and (max-width: 1400px) {
+  .contact {
+    width: 95% !important;
+    gap: 5px;
+    margin: 0px;
+    padding: 0px 10px;
+  }
 }

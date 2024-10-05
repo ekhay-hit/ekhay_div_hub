@@ -62,14 +62,14 @@
 }
 @media screen and (max-width: 1400px) {
   .projects-list {
-    width: 100% !important;
+    width: 95% !important;
     padding: 60px;
     margin: 0px;
     padding: 60px;
   }
 
   .project-card {
-    width: 100%;
+    width: 100% !important;
     gap: 20px;
     padding: 4px;
   }

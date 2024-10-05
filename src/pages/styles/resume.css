@@ -47,9 +47,11 @@ li {
   border-radius: 25px;
 }
 
-.resume {
-  width: 100%;
-  gap: 5px;
-  margin: 0px;
-  padding: 4px;
+@media screen and (max-width: 1400px) {
+  .resume {
+    width: 95% !important;
+    gap: 5px;
+    margin: 0px;
+    padding: 4px;
+  }
 }
