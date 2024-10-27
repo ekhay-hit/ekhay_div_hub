@@ -35,6 +35,8 @@ export default function Resume() {
     <main className="resume">
       <div className="download_resume">
         <ResumeDownload />
+        <br></br>
+        <ViewResume />
       </div>
       <div className="front_end">
         <Skill skills={frontEndSkills} />
@@ -62,10 +64,20 @@ function Skill({ skills }) {
 
 function ResumeDownload() {
   const resumeUrl =
-    "https://drive.google.com/uc?export=download&id=1ic-YgQmq-djK3T4gge5TYAsvsEpd8xz0";
+    "https://drive.google.com/uc?export=download&id=1RdnSL5gVPjk6S3sU8A9GDCBygxtJpVXY";
   return (
     <a href={resumeUrl} target="_blank" download="Houssine_khay.pdf">
-      ⬇️ Download my resume
+      ⬇️ Download my Resume
+    </a>
+  );
+}
+
+function ViewResume() {
+  const resumeUrl =
+    "https://drive.google.com/file/d/1RdnSL5gVPjk6S3sU8A9GDCBygxtJpVXY/view?usp=drive_link ";
+  return (
+    <a href={resumeUrl} target="_blank">
+      👁️‍🗨️ View my Resume
     </a>
   );
 }

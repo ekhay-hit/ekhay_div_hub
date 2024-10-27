@@ -37,9 +37,14 @@ li {
 }
 
 .download_resume {
+  display: flex;
+  gap: 20px;
   text-align: start;
   width: 100%;
   padding: 30px;
+}
+.download_resume a {
+  text-decoration: none;
 }
 .download_resume a:hover {
   background-color: rgb(203, 223, 223) !important;
