@@ -64,7 +64,7 @@ function Skill({ skills }) {
 
 function ResumeDownload() {
   const resumeUrl =
-    "https://drive.google.com/uc?export=download&id=1RdnSL5gVPjk6S3sU8A9GDCBygxtJpVXY";
+    "https://drive.google.com/uc?export=download&id=1H0a-bAP-_0PPOBDAGfyg5VUX2aTvmiKa";
   return (
     <a href={resumeUrl} target="_blank" download="Houssine_khay.pdf">
       ⬇️ Download my Resume
@@ -74,7 +74,7 @@ function ResumeDownload() {
 
 function ViewResume() {
   const resumeUrl =
-    "https://drive.google.com/file/d/1RdnSL5gVPjk6S3sU8A9GDCBygxtJpVXY/view?usp=drive_link ";
+    "https://drive.google.com/file/d/1H0a-bAP-_0PPOBDAGfyg5VUX2aTvmiKa/view?usp=drive_link ";
   return (
     <a href={resumeUrl} target="_blank">
       👁️‍🗨️ View my Resume
