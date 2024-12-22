@@ -5,7 +5,7 @@ import "./styles/portfolio.css";
 
 const projects = [
   {
-    id: 7,
+    id: 1,
     name: "FootyNet",
     technology: "MERN,GraphQL",
     image: "footyNet",
@@ -13,7 +13,7 @@ const projects = [
     dUrl: "https://footy-net.onrender.com/",
   },
   {
-    id: 1,
+    id: 2,
     name: "PAC-Overflow",
     technology: "MERN",
     image: "PacOver",
@@ -21,7 +21,15 @@ const projects = [
     dUrl: "https://pac-overflow.onrender.com/",
   },
   {
-    id: 2,
+    id: 3,
+    name: "PopCorn Movies' Tracker",
+    technology: "React,Javscript",
+    image: "popcorn",
+    gitHub: "https://github.com/ekhay-hit/popcorn_movies_tracker",
+    dUrl: "https://popcorn-movies-tracker.onrender.com/",
+  },
+  {
+    id: 4,
     name: "Smart Shop",
     technology: "Blazor,.Net, C#",
     image: "smartShop",
@@ -29,7 +37,7 @@ const projects = [
     dUrl: "https://github.com/ekhay-hit/SmartShop",
   },
   {
-    id: 3,
+    id: 5,
     name: "Text Editor",
     technology: "MERN2",
     image: "textEditor",
@@ -37,7 +45,7 @@ const projects = [
     dUrl: "https://text-editor-pwa-rrm4.onrender.com",
   },
   {
-    id: 4,
+    id: 6,
     name: "Safer Travels",
     technology: "JS,CSS, API,",
     image: "weatherDashboard",
@@ -45,7 +53,7 @@ const projects = [
     dUrl: "https://mtkrd.github.io/Safer-Travels/",
   },
   {
-    id: 5,
+    id: 7,
     name: "Task Board",
     technology: "JS,jQuery,CSS",
     image: "taskBoard1",
@@ -53,7 +61,7 @@ const projects = [
     dUrl: "https://ekhay-hit.github.io/Tasks-Board/",
   },
   {
-    id: 6,
+    id: 8,
     name: "Projects taracker Board",
     technology: "JS,jQuery,CSS",
     image: "project_tracker_board",
